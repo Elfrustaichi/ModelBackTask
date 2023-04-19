@@ -1,0 +1,29 @@
+﻿@model StudentViewModel
+<h1>Student Index sehifesi</h1>
+
+
+<h2>Student List</h2>
+
+<ul>
+    @foreach (Student item in Model.Students)
+    {
+        <li><a href="/student/detail/@item.id">id:@item.id Name:@item.FullName point:@item.Point</a></li>
+        
+    }
+   
+</ul>
+
+
+<h2>Group List</h2>
+
+<ul>
+
+    @foreach (Group item in Model.Groups)
+    {
+        <li>Id:@item.Id Name:@item.Name </li>
+
+    }
+
+
+
+</ul>
